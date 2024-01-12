@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toggler-bg{
+    background-color: #ffc727;
+}
+.nav-link{
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: brown;
+}
+
+/* navigation activeness*/
+.navbar-nav > .active > a{
+    color: hsl(46, 100%, 50%);
+    position: relative;
+}
+.navbar-nav > .active > a::after{
+    content: '';
+    background-color:   hsl(46, 100%, 50%);
+    width: 70%;
+    height: 3px;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    margin-left: 15px;
+}
+@media only screen and (max-width: 768px){
+    .navbar-nav > .active > a::after{
+    content: '';
+    background-color:   hsl(46, 100%, 50%);
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    margin-left: 15px;
+    }
+}
+/*end*/
+
+/*section one css*/
+.bg-img{
+    background-image: url(	https://urbanstyleburrito.com/static/media/homesection.7678e756af41582f3cdb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+}
+.c-red{
+    color: #B40606;
+}
+.bg-red{
+    background-color: #B40606;
+}
+.pa{
+    font-size: 60px;
+    color: black;
+}
+.side h1{
+    margin-top: -30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+.side button{
+    border-radius: 20px;
+    border-color: #B40606;
+}
+.side h1{
+    position: relative;
+}
+.side .para{
+    margin-top: -35px;
+}
+.side h1::after{
+    content: '';
+    background-color: #B40606;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+}
+/*section two*/
+.bg2{
+    background-image: url(	https://urbanstyleburrito.com/static/media/second_second_bg.2b2fc7a3a617bec387c9.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+.section-two{
+    position: relative;
+}
+.img-absolute{
+    width: auto;
+    top: -85px;
+    position: absolute;
+}*/
+.p-section{
+    margin-top: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.button{
+    border-color: #B40606;
+    border-radius: 25px;
+}
+.button:hover{
+    border-color: #B40606;
+    color: #B40606;
+}
+.p-section-3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.p1-sec{
+    color: hsl(46, 100%, 50%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.span-3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bg3{
+    background: url(https://urbanstyleburrito.com/static/media/Food%20truck%20text%20bg.de097d81dc5f6abf6c65.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.bg4{
+    background: url(https://urbanstyleburrito.com/static/media/connect_bg.f6e1523e20eb19aa5fcc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.bg-white{
+    background-color: white;
+}
+.h3-sec-4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.p-foot{
+    margin-top: -10px;
+}
+.img{
+    width: 106%;
+    margin-left: -4%;
+}
+
+/*responsveness*/
+@media only screen and (max-width: 500px) {
+    .p-section{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        margin-top: 30%;
+    }
+    .p-section-3{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .img-flud{
+        text-align: center;
+    }
+    .side p{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 500px){
+    .p-section{
+        width: 75%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .side p{
+        width: 95%;
+        margin-left: 3%;
+    }
+    .img-flud{
+        margin-left: 3%;
+    }
+}
+
